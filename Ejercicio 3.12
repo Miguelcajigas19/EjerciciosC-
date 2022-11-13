@@ -1,0 +1,39 @@
+namespace Ejemplocap3
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            int Citas;
+            double valortratamiento;
+
+            Console.WriteLine("Escriba el numero de citas");
+            Citas = Convert.ToInt32(Console.ReadLine());
+
+            if (Citas <= 3)
+            {
+                valortratamiento = (Citas * 200000);
+                Console.WriteLine("El valor de la cita es de 200.000");
+                Console.WriteLine("El gasto del tratamiento es: " + valortratamiento);
+            }
+            if (Citas >= 4 && Citas <= 5)
+            {
+                valortratamiento = (Citas * 150000) + 600000;
+                Console.WriteLine("El valor de la cita es de 150.000");
+                Console.WriteLine("El gasto del tratamiento es: " + valortratamiento);
+            }
+            if (Citas >= 6 && Citas <= 8)
+            {
+                valortratamiento = (Citas * 100000) + 900000;
+                Console.WriteLine("El valor de la cita es de 100.000");
+                Console.WriteLine("El gasto del tratamiento es: " + valortratamiento);
+            }
+            if (Citas > 8)
+            {
+                valortratamiento = (Citas * 50000) + 1200000;
+                Console.WriteLine("El valor de la cita es de 50.000");
+                Console.WriteLine("El gasto del tratamiento es: " + valortratamiento);
+            }
+        }
+    }
+}

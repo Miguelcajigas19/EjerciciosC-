@@ -1,0 +1,22 @@
+namespace Ejemploscap2restantes
+{ 
+    public class ejercicio2_7
+{
+    public static void Main()
+    {
+        Console.WriteLine("Escriba la cantidad de litros");
+        double litrosVendidos = (Convert.ToInt32(Console.ReadLine()));
+
+            Console.WriteLine("Escriba el valor por galon");
+            double valorGalon = (Convert.ToInt32(Console.ReadLine()));
+
+            double galonesVendidos = Math.Truncate(litrosVendidos / 3.785);
+            double pago_Galon = (Convert.ToDouble(Console.ReadLine()));
+
+            Console.WriteLine("la cantidad de leche en galones es  " + galonesVendidos);
+         Console.WriteLine("la cantidad de galones de leche vendida es  " + (galonesVendidos * pago_Galon));
+        }
+
+
+}
+}

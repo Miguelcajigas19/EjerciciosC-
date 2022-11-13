@@ -1,0 +1,128 @@
+namespace ejemplocap3
+{
+    class Program 
+    {
+        public static void Main()
+        {
+            double Minutos;
+            double precioMinuto;
+            double precioLlamada;
+            Console.WriteLine("Escriba los minutos que duró la llamada");
+            Minutos = Convert.ToDouble(Console.ReadLine());
+
+
+
+            Console.WriteLine("¿La llamada se realizó en un dia habil? (S para marcar si , N para marcar no )");
+            var dia = Convert.ToString(Console.ReadLine());
+
+            if (dia=="s" || dia=="S")
+            {
+                Console.WriteLine("¿La llamada se realizó en turno matutino o vespertino? (M para marcar matutino , V para marcar vespertino )");
+                var turno=Convert.ToString(Console.ReadLine());
+                if (turno=="m" && Minutos <= 5 || turno=="M" && Minutos <= 5)
+                {
+                    precioMinuto = Minutos * 1;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.15);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+                }
+
+                if (turno == "m" && Minutos >= 6 && Minutos <= 8 || turno == "M" && Minutos >= 6 && Minutos <= 8)
+                {
+                    precioMinuto = Minutos * 0.8;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.15);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if (turno == "m" && Minutos >= 9 && Minutos <= 10 || turno == "M" && Minutos >= 9 && Minutos <= 10)
+                {
+                    precioMinuto = Minutos * 0.7;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.15);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if (turno == "m" && Minutos > 10 || turno == "M" && Minutos > 10)
+                {
+                    precioMinuto = Minutos * 0.5;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.15);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+
+
+
+                if (turno == "v" && Minutos <= 5 || turno == "V" && Minutos <= 5)
+                {
+                    precioMinuto = Minutos * 1;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.10);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if (turno == "v" && Minutos >= 6 && Minutos <= 8 || turno == "V" && Minutos >= 6 && Minutos <= 8)
+                {
+                    precioMinuto = Minutos * 0.8;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.10);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if (turno == "v" && Minutos >= 9 && Minutos <= 10 || turno == "V" && Minutos >= 9 && Minutos <= 10)
+                {
+                    precioMinuto = Minutos * 0.7;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.10);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if (turno == "v" && Minutos > 10 || turno == "V" && Minutos > 10)
+                {
+                    precioMinuto = Minutos * 0.5;
+                    precioLlamada = precioMinuto +( precioMinuto * 0.10);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+            }
+
+
+            if (dia=="n"|| dia == "N")
+            {
+                if ( Minutos <= 5)
+                {
+                    precioMinuto = Minutos * 1;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.03);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if ( Minutos <= 8)
+                {
+                    precioMinuto = Minutos * 0.8;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.03);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if ( Minutos <= 10)
+                {
+                    precioMinuto = Minutos * 0.7;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.03);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+                if ( Minutos > 10)
+                {
+                    precioMinuto = Minutos * 0.5;
+                    precioLlamada = precioMinuto + (precioMinuto * 0.03);
+                    Console.WriteLine("El precio de la llamada es: " + precioLlamada);
+
+                }
+
+            }
+
+        }
+        }
+    }

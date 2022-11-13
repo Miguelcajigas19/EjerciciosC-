@@ -1,0 +1,30 @@
+namespace Ejemplocap4
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            int Edad;
+            int Suma = 0;
+            int Contador = 0;
+            int Promedio=0;
+            int Cantidad;
+
+            Console.WriteLine("Inserte la cantidad de estudiantes");
+            Cantidad = Convert.ToInt32(Console.ReadLine());
+
+            while (Contador < Cantidad)
+            {
+
+                Console.WriteLine("Escriba una edad");
+                Edad = Convert.ToInt32(Console.ReadLine());
+
+                Suma = Suma + Edad;
+                    Contador++;
+                    Promedio = Suma / Contador;
+                
+            }
+            Console.WriteLine("El promedio de edades es: " + Promedio);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+using System;
+namespace ejemplocap3
+{
+    public class Program ejemplo3_3
+    {
+        static void Main()
+        {
+            Console.WriteLine("Escriba la cantidad de lapices a comprar");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            if (num1 >= 1000)
+            {
+                double valor_Total = (num1 * 85) / 100;
+                Console.WriteLine("El valor total de la compra de los lapices es de " + valor_Total);
+            }
+            else if (num1 < 1000)
+            {
+                double valorTotal = (num1 * 90) / 100;
+                Console.WriteLine("El valor total de la compra de los lapices es de " + valorTotal);
+            }
+        }
+    }
+}

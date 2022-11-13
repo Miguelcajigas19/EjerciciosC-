@@ -1,0 +1,24 @@
+public class Ejemplo3_4
+{
+
+    public static void Main()
+    {
+        double precioArticulo;
+        double precioTotal;
+
+        Console.WriteLine("Escribir el precio del articulo");
+        precioArticulo = Convert.ToDouble(Console.ReadLine());
+
+        if (precioArticulo <= 2500)
+        {
+            precioTotal = precioArticulo - (precioArticulo * 0.08);
+            Console.WriteLine("El precio total es de " + precioTotal);
+        }
+        else if (precio_Articulo > 2500)
+        {
+            precioTotal = precioArticulo - (precioArticulo * 0.15);
+            Console.WriteLine("El precio total es de " + precioTotal);
+
+        }
+    }
+}

@@ -1,0 +1,16 @@
+namespace Ejemplos
+{
+    public class ejercicio2_10
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Escriba la cantidad de metros que necesita");
+            double metrosNecesarios = (Convert.ToInt32(Console.ReadLine()));
+
+            double pulgadasNecesarias =Math.Truncate( metrosNecesarios / 0.0254);
+            Console.WriteLine("la cantidad en pulgadas que debe pedir es " + pulgadasNecesarias );
+        }
+
+
+    }
+}

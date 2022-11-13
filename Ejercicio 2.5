@@ -1,0 +1,25 @@
+namespace Ejemploscap2restantes
+{
+    public class ejercicio2_5
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Escriba la variable A");
+            double a= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Escriba la variable B");
+            double b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Escriba la variable C");
+            double c = Convert.ToInt32(Console.ReadLine());
+
+            double areaRectangulo = b * c;
+            double areaTriangulo = ((a-c)*b)/2;
+            double areaTotal = areaRectangulo+areaTriangulo;
+            Console.WriteLine("");
+            Console.WriteLine("El resultado es : " + areaTotal);
+
+
+        }
+    }
+}

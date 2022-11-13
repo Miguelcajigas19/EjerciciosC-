@@ -1,0 +1,21 @@
+namespace Ejemplocap4
+{
+    public class program
+    {
+        public static void Main()
+        {
+            int Mes = 0;
+            int Ahorro = 0;
+            int Total = 0;
+            while (Mes < 12)
+            {
+                Mes++;
+                Console.WriteLine("Escriba el ahorro del mes: " + Mes);
+                Ahorro = Convert.ToInt32(Console.ReadLine());
+                Total = Total + Ahorro;
+                Console.WriteLine("El ahorro hasta el mes es: " + Total);
+                Console.WriteLine("");
+            }
+        }
+    }
+}
